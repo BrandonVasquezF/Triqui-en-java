@@ -42,7 +42,7 @@ public class MenuPrincipal extends JFrame {
          ImageIcon ImgOriginal = new ImageIcon(getClass().getResource("../imagenes/fondoTriqui.png"));
          //ImageIcon ImgScalada = new ImageIcon(ImgOriginal.getImage().getScaledInstance(700, 400, Image.SCALE_DEFAULT));
          jlFondo = new JLabel(ImgOriginal);
-         jlFondo.setBounds(100,  50 , 500, 250);
+         jlFondo.setBounds(110,  50 , 500, 250);
          add(jlFondo);
         
         
