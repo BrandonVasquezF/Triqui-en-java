@@ -28,9 +28,7 @@ public class Modos_Control implements ActionListener{
     @Override
 	public void actionPerformed(ActionEvent e) {
                 if (e.getSource().equals(m.jbJCJ)) {
-                        JOptionPane.showMessageDialog(null, "Juegador contra jugador", "MODO DE JUEGO", JOptionPane.YES_NO_CANCEL_OPTION);
-			m.setVisible(false);
-			m.dispose();
+                       evento_jugadorContraJugador(); 
 		}
                 if (e.getSource().equals(m.jbVolver)) {
 			evento_volver();
@@ -41,5 +39,18 @@ public class Modos_Control implements ActionListener{
             m.setVisible(false);
             m.dispose();
             m.mp.setVisible(true);
+        }
+
+        public void evento_jugadorContraJugador(){
+            JOptionPane.showMessageDialog(null, "Juegador contra jugador", "MODO DE JUEGO", JOptionPane.YES_NO_CANCEL_OPTION);
+			if(JOptionPane.YES_OPTION == 0){
+                m.setVisible(false);
+			    m.dispose();
+                m.mp.setVisible(true);
+            }
+            else{
+                //i
+            }
+            
         }
 }
